@@ -1,0 +1,14 @@
+html 
+    
+    head
+        title File Upload
+    
+    body
+        
+        form(role="form", action="/upload", method="post", enctype="multipart/form-data")
+            div(class="form-group")
+            label(for="doLabelsMatter") Upload File        
+            br 
+            br
+            input(type="file", name="upl", id="uploadFile")
+            input(type="submit", value="upload", name="submit")
