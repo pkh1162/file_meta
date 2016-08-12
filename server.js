@@ -11,6 +11,12 @@ var app = express();
 app.set("view engine", "pug");
 
 app.get("/", function(req, res){
+    res.render("index");
+    res.end();
+});
+
+
+app.get("/upload", function(req, res){
     res.render("fileUpload");
     res.end();
 });
